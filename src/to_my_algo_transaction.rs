@@ -249,6 +249,7 @@ struct MyAlgoTransactionCommonFields {
     group: Option<String>,
     lease: Option<String>,
     note: Option<Vec<u8>>,
+    #[serde(rename = "reKeyTo")]
     rekeyTo: Option<String>,
     #[serde(rename = "type")]
     type_: String,
